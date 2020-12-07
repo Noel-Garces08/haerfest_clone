@@ -51,7 +51,7 @@ body {
     align-items: center;
 }
 
-.header-logo {
+.brand {
     font-size: 2.5rem;
     letter-spacing: 0.8rem;
     transform: scaleY(.75);
@@ -60,9 +60,6 @@ body {
 .main-navigation-container {
     display: flex;
     align-items: center;
-}
-
-.nav-primary {
 }
 
 .nav-primary .menu-item a {

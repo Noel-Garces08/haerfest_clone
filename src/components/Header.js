@@ -2,7 +2,7 @@ const Header = () => {
     return `
         <div class="container">
             <div class="header-brand-container">
-                <div class="header-logo">HAERFEST</div>
+                <a href="/" class="brand">HAERFEST</a>
             </div>
             <div class="main-navigation-container">
                 <div class="nav-primary">
@@ -14,7 +14,7 @@ const Header = () => {
                             <a class="ui-sidebar-category-toggler" href="/women" data-gender="women" data-link>Women</a>
                         </li>
                         <li class="menu-item">
-                            <a class="ui-sidebar-category-toggler" href="/women" data-gender="women" data-link>Explore</a>
+                            <a class="ui-sidebar-category-toggler" href="/explore" data-gender="explore" data-link>Explore</a>
                         </li>
                     </ul>
                 </div>
