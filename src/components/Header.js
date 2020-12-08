@@ -2,7 +2,7 @@ const Header = () => {
     return `
         <div class="container">
             <div class="header-brand-container">
-                <a href="/" class="brand">HAERFEST</a>
+                <a href="/" class="brand">H&HAPPAREL</a>
             </div>
             <div class="main-navigation-container">
                 <div class="nav-primary">
