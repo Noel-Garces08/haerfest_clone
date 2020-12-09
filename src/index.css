@@ -20,35 +20,136 @@ a {
     color: inherit;
 }
 
+img {
+    width: 100%;
+}
+
 body {
     color: #fff;
-    background-color: #eeeeee;
+    /* background-color: #eeeeee; */
     height: 100vh;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
 }
 
+/* Extra small devices (portrait phones, less than 576px) */
+ /* No media query for `xs` since this is the default in Bootstrap */
 /* Utilities */
 .container {
-    width: calc(100% - 7rem);
+    max-width: 88%;
     margin: 0 auto;
     height: 100%;
 }
 
 .h1 {
-    font-size: 6rem;
+    font-size: 4.6rem;
     line-height: 1.4;
 }
 
 .h2 {
-    font-size: 5rem;
+    font-size: 3.6rem;
+    line-height: 1.4;
+    font-weight: 400;
 }
 
 .description {
     font-size: 1.75rem;
+    font-weight: 400;
     line-height: 1.6;
 }
 
+.btn {
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding: 1rem 0 2rem 0;
+    max-width: 22.5rem;
+    width: 100%;
+    /* margin-top: 5.2rem; */
+    margin-top: 4rem;
+    display: inline-block;
+    position: relative;
+}
+
+.btn i {
+    position: absolute;
+    right: 0;
+}
+
+.btn::before {
+    background-color: #fff;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition-delay: 0s;
+}
+
+.btn:hover::before {
+    transform: scaleX(1);
+    transition-delay: 0.25s;
+}
+
+.btn::after, .btn::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    right: 0;
+    transition: transform 0.4s cubic-bezier(0.65, 0.005, 0.35, 0.995);
+}
+
+.btn::after {
+    background-color: #fff;
+    transform-origin: right;
+    transition-delay: 0.25s;
+}
+
+.btn:hover::after {
+    transform: scaleX(0);
+    transition-delay: 0s;
+}
+
+.btn-black::before {
+    background-color: #4A4A4A;
+}
+
+.btn-black::after {
+    background-color: #4A4A4A;
+}
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {     
+
+    
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .h1 {
+        font-size: 6.6rem;
+    }
+
+    .h2 {
+        font-size: 5.6rem;
+    }
+
+    .container {
+        max-width: calc(100% - 7rem);
+    }
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+ /* No media query for `xs` since this is the default in Bootstrap */
 /* Header */
 .header {
     position: fixed;
@@ -74,6 +175,7 @@ body {
 
 .brand {
     font-size: 2.5rem;
+    font-weight: 400;
     letter-spacing: 0.8rem;
     transform: scaleY(.75);
 }
@@ -107,22 +209,41 @@ body {
     color: #fff;
 }
 
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {     
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+ /* No media query for `xs` since this is the default in Bootstrap */
 /* Home Page */
 .home-page-hero {
-    background-color: rgb(23, 49, 97);
     height: 100vh;
     max-height: 930px;
 }
 
 .home-page-hero .container {
     display: flex;
-    position: relative;
     justify-content: space-between;
 }
 
 .home-page-hero-content {
     align-self: center;
-    padding-left: 8.33%;
 }
 
 .home-page-hero-content h1 {
@@ -133,64 +254,158 @@ body {
     margin-top: 1.6rem;
 }
 
-/* Homepage animated buttton */
-.home-page-hero-content a {
-    font-size: 1.6rem;
-    padding: 1rem 0 2rem 0;
-    max-width: 22.5rem;
-    width: 100%;
-    margin-top: 5.2rem;
-    display: inline-block;
-    position: relative
-}
-
-.home-page-hero-content a i {
-    position: absolute;
-    right: 0;
-}
-
-.home-page-hero-content a::before {
-    background-color: #fff;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition-delay: 0s;
-}
-
-.home-page-hero-content a:hover::before {
-    transform: scaleX(1);
-    transition-delay: 0.25s;
-}
-
-.home-page-hero-content a::after, .home-page-hero-content a::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    bottom: 0;
-    right: 0;
-    transition: transform 0.4s cubic-bezier(0.65, 0.005, 0.35, 0.995);
-}
-
-.home-page-hero-content a::after {
-    background-color: #fff;
-    transform-origin: right;
-    transition-delay: 0.25s;
-}
-
-.home-page-hero-content a:hover::after {
-    transform: scaleX(0);
-    transition-delay: 0s;
-}
-
 .home-page-hero-image {
-    position: relative;
-    right: -3.5rem;
-    z-index: 1;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    z-index: -1;
 }
 
 .home-page-hero-image img {
-    width: 100%;
     height: 100%;
     object-fit: cover;
     filter: grayscale(50%);
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {     
+
+    
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .home-page-hero {
+        background-color: rgb(23, 49, 97);
+    }
+
+    .home-page-hero-content {
+        padding-left: 8.33%;
+        padding-right: 3rem;
+    }
+
+    .home-page-hero-image {
+        position: relative;
+        left: auto;
+        right: -3.5rem;
+        z-index: 0;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+ /* No media query for `xs` since this is the default in Bootstrap */
+/** Gender Selection */
+.gender-selection {
+    padding: 60px 0;
+}
+
+.gender-selection .col-left, .gender-selection .col-right {
+    position: relative;
+}
+
+.gender-selection .col-left {
+    margin-bottom: 2.5rem;
+}
+
+.gender-selection .content {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 225px;
+    left: 50%;
+    display: block;
+    width: 100%;
+    z-index: 3;
+}
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {     
+
+    
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .gender-selection .container {
+        display: flex;
+        width: calc(100% - 144px);
+    }       
+
+    .gender-selection .col-left {
+        margin-bottom: 0;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+ /* No media query for `xs` since this is the default in Bootstrap */
+/* * Featured Category */
+.featured-category {
+    padding: 60px 0;
+    background-color: #f0f0f0;
+    color: #4A4A4A;
+}
+
+.featured-content {
+    padding: 17px;
+}
+
+.featured-content .description {
+    font-size: 1.6rem;
+    margin-top: 1.6rem;
+}
+
+.featured-image {
+    padding: 17px;
+}
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {     
+
+    
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .featured-category .container {
+        display: flex;
+        align-items: center;
+    }
+
+    .featured-content .description {
+        font-size: 2rem;
+        width: 350px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+}
+
+
+
