@@ -2,8 +2,9 @@
   "name": "js_routing_system",
   "version": "1.0.0",
   "description": "",
+  "main": "./src/",
   "scripts": {
-    "start": "live-server --port=3000 --entry-file=src/index.html"
+    "start": "live-server --port=3000 --entry-file=index.html"
   },
   "keywords": [],
   "author": "",
