@@ -394,11 +394,16 @@ body {
     .featured-category .container {
         display: flex;
         align-items: center;
+        max-width: 1600px;
     }
 
     .featured-content .description {
         font-size: 2rem;
         width: 350px;
+    }
+
+    .featured-image {
+        width: 50%;
     }
 }
 

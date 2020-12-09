@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "live-server --port=3000 --entry-file=public/index.html"
+    "start": "live-server --port=3000 --entry-file=src/index.html"
   },
   "keywords": [],
   "author": "",
