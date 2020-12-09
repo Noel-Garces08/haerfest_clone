@@ -265,11 +265,6 @@ body {
     height: 100%;
     object-fit: cover;
     filter: grayscale(50%);
-    /* mask-image: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); */
-    -webkit-mask-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
-    -webkit-mask-image: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-    mask-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
-    mask-image: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
 
  /* Small devices (landscape phones, 576px and up) */
@@ -299,6 +294,14 @@ body {
         left: auto;
         right: -3.5rem;
         z-index: 0;
+    }
+
+    .home-page-hero-image img {
+            /* mask-image: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); */
+        -webkit-mask-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
+        -webkit-mask-image: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+        mask-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
+        mask-image: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
     }
 }
 
