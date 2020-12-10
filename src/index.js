@@ -40,8 +40,11 @@ const router = async () => {
 
     const screen = match.route.screen;
 
-    document.getElementById('header-container').innerHTML = await Header();
-    document.getElementById('main-container').innerHTML = await screen(getParams(match));
+    document.getElementById('header-container').innerHTML = await Header.render();
+    document.getElementById('main-container').innerHTML = await screen.render(getParams(match));
+
+    Header.after_render();
+    screen.after_render();
 };
 
 document.addEventListener('DOMContentLoaded', () => {
